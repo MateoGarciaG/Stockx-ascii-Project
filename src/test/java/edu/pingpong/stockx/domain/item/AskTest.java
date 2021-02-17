@@ -21,7 +21,7 @@ public class AskTest {
     }
 
     @Test
-    public void sizeTest() {
+    public void sizeAndValueTest() {
 
         assertEquals("13", this.ask.size());
         assertEquals(288, this.ask.value());

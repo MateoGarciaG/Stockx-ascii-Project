@@ -23,7 +23,7 @@ public class BidTest {
     }
 
     @Test
-    public void sizeTest() {
+    public void sizeAndValueTest() {
 
         assertEquals("13", this.bid.size());
         assertEquals(550, this.bid.value());

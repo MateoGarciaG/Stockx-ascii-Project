@@ -23,7 +23,7 @@ public class SaleTest {
     }
 
     @Test
-    public void sizeTest() {
+    public void sizeAndValueTest() {
 
         assertEquals("6", this.sale.size());
         assertEquals(352, this.sale.value());
