@@ -32,9 +32,9 @@ public class BidTest {
         String size = "6";
         Integer ask = 200;
 
-        this.bid = new Bid(size, ask);
+        Offer nuevoBid = new Bid(size, ask);
 
-        assertEquals("6", this.bid.size());
-        assertEquals(200, this.bid.value());
+        assertEquals("6", nuevoBid.size());
+        assertEquals(200, nuevoBid.value());
     }
 }
