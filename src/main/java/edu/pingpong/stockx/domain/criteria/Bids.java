@@ -14,8 +14,6 @@ public class Bids implements Criteria {
         for (Offer offer : item.offers()) {
             if (offer instanceof Bid) {
                 listaBids.add(offer);
-            } else {
-                continue;
             }
         }
 
