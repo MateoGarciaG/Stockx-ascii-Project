@@ -8,7 +8,6 @@ public class Sneaker implements Item {
     private int ask;
     private int bid;
 
-
     public Sneaker(String style, String name) {
         this.style = style;
         this.name = name;
@@ -16,11 +15,11 @@ public class Sneaker implements Item {
     }
 
 
-    public String getStyle() {
+    private String getStyle() {
         return style;
     }
 
-    public String getName() {
+    private String getName() {
         return name;
     }
 
@@ -50,6 +49,19 @@ public class Sneaker implements Item {
     public void setBid(int bid) {
         this.bid = bid;
     }
+
+    public void add(Offer oferta) {
+        System.out.println("");
+    }
+
+    // Ya que deuelve una lista de tipo Offer la cual aún no está creada
+    // mockearé a un String por ahora
+    public String offers() {
+
+        return "";
+    }
+
+
 
     @Override
     public String toString() {

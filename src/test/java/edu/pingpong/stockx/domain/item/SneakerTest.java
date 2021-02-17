@@ -26,5 +26,16 @@ public class SneakerTest {
         assertEquals("Jordan 1 Retro High Dark Mocha\n555088-105", this.sneaker.toString());
     }
 
+    @Test
+    public void addTest() {
+
+        Offer bid = new Bid("13", 550);
+
+        sneaker.add(bid);
+
+        assertEquals(1, this.sneaker.getBid());
+
+    }
+
 
 }
