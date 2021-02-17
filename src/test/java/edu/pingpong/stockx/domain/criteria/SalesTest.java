@@ -4,5 +4,9 @@ import static org.junit.Assert.*;
 import org.junit.*;
 
 public class SalesTest {
-    
+    @Test
+    public void shouldAnswerWithTrue()
+    {
+        assertTrue( true );
+    }
 }
