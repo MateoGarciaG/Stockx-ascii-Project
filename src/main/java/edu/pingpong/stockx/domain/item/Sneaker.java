@@ -1,5 +1,7 @@
 package edu.pingpong.stockx.domain.item;
 
+import java.util.*;
+
 public class Sneaker implements Item {
     
     private String style = null;
@@ -7,6 +9,8 @@ public class Sneaker implements Item {
     private int sale;
     private int ask;
     private int bid;
+
+    private List<Offer> ofertas = new ArrayList<Offer>();
 
     public Sneaker(String style, String name) {
         this.style = style;
@@ -23,42 +27,46 @@ public class Sneaker implements Item {
         return name;
     }
 
-    
+    @Override
     public int getSale() {
         return sale;
     }
 
+    @Override
     public void setSale(int sale) {
         this.sale = sale;
     }
 
 
-
+    @Override
     public int getAsk() {
         return ask;
     }
 
+    @Override
     public void setAsk(int ask) {
         this.ask = ask;
     }
 
+    @Override
     public int getBid() {
         return bid;
     }
 
+    @Override
     public void setBid(int bid) {
         this.bid = bid;
     }
 
+    @Override
     public void add(Offer oferta) {
-        System.out.println("");
+        this.ofertas.add(oferta);
     }
 
-    // Ya que deuelve una lista de tipo Offer la cual aún no está creada
-    // mockearé a un String por ahora
-    public String offers() {
+    @Override
+    public List<Offer> offers() {
 
-        return "";
+        return this.ofertas;
     }
 
 

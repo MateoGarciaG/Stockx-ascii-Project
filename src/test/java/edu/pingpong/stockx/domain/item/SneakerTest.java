@@ -6,7 +6,7 @@ import org.junit.*;
 public class SneakerTest {
     
 
-    private Item sneaker = null;
+    private Item sneaker;
 
     @Before
     public void setupSneaker() {
@@ -31,7 +31,7 @@ public class SneakerTest {
 
         Offer bid = new Bid("13", 550);
 
-        sneaker.add(bid);
+        this.sneaker.add(bid);
 
         assertEquals(1, this.sneaker.getBid());
 
