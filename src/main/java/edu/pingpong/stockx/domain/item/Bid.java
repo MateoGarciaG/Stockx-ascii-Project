@@ -4,12 +4,12 @@ public class Bid implements Offer {
     
 
     private String size = null;
-    private Integer ask = null;
+    private Integer bid = null;
 
 
-    public Bid(String size, Integer ask) {
+    public Bid(String size, Integer bid) {
         this.size = size;
-        this.ask = ask;
+        this.bid = bid;
     }
 
     @Override
@@ -19,12 +19,12 @@ public class Bid implements Offer {
 
     @Override
     public int value() {
-        return this.ask;
+        return this.bid;
     }
 
     @Override
     public String toString() {
-        return String.format("%s %d", this.size, this.ask);
+        return String.format("%s %d", this.size, this.bid);
     }
 
 }
