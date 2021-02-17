@@ -24,7 +24,7 @@ public class Bid implements Offer {
 
     @Override
     public String toString() {
-        return String.format("%s %d", this.size, this.bid);
+        return String.format("%s %d", this.size(), this.value());
     }
 
 }
