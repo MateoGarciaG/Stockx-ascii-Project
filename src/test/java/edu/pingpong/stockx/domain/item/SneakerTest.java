@@ -23,7 +23,7 @@ public class SneakerTest {
     @Test
     public void toStringTest() {
 
-        assertEquals("Jordan 1 Retro High Dark Mocha\n555088-105", this.sneaker.toString());
+        assertEquals("Jordan 1 Retro High Dark Mocha 555088-105", this.sneaker.toString());
     }
 
     @Test
@@ -35,6 +35,16 @@ public class SneakerTest {
 
         assertEquals(1, this.sneaker.getBid());
 
+    }
+
+    @Test
+    public void offers() {
+
+        Offer bid = new Bid("13", 550);
+
+        this.sneaker.add(bid);
+
+        assertEquals(1, this.sneaker.offers().size());
     }
 
 
