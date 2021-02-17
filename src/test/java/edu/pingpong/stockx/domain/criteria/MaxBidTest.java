@@ -8,12 +8,12 @@ import edu.pingpong.stockx.domain.item.*;
 public class MaxBidTest {
 
 
-    private Criteria ask = null;
+    private Criteria bin = null;
     private Item sneaker = null;
 
     @Before
     public void setup() {
-        this.ask = new Asks();
+        this.bin = new Bids();
         this.sneaker = new Sneaker("555088-105", "Jordan 1 Retro High Dark Mocha");
     }
 
@@ -25,10 +25,10 @@ public class MaxBidTest {
         this.sneaker.add(new Bid("13", 338));
         this.sneaker.add(new Bid("9.5", 480));
 
-        assertEquals(4, this.ask.checkCriteria(this.sneaker).size());
+        assertEquals(4, this.bin.checkCriteria(this.sneaker).size());
 
-        for (Offer oferta : this.ask.checkCriteria(this.sneaker)) {
-            assertTrue("9.5", oferta.size());
+        for (Offer oferta : this.bin.checkCriteria(this.sneaker)) {
+            assertEquals("9.5", oferta.size());
         }
 
     }
