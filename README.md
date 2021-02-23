@@ -1,18 +1,17 @@
-# StockX Examen
+# StockX Project
 
-## Examen programación Java
 
-Examen de programación DAW Dual Java de febrero de 2021, CIFP Francesc de Borja Moll, Palma (Illes Balears).
+Proyecto Programación DAW Dual Java de febrero de 2021, CIFP Francesc de Borja Moll, Palma (Illes Balears).
 
-[![status application](https://img.shields.io/badge/status-stable-brightgreen)](URL_Proyecto)
+[![status application](https://img.shields.io/badge/status-stable-brightgreen)](https://github.com/MateoGarciaG/Stockx-ascii-Project)
 
 <!--Logos-->
 
-![Project Logo Java](https://github.com/MateoGarciaG/NombreProject/doc/img/java.png)
+![Project Logo Java](doc/img/java.png)
 
-![Project Logo Maven](https://github.com/MateoGarciaG/NombreProject/doc/img/apache_maven.png)
+![Project Logo Maven](doc/img/apache_maven.png)
 
-![Project Logo Borja Moll](https://github.com/MateoGarciaG/NombreProject/doc/img/logocifp.png)
+![Project Logo Borja Moll](doc/img/logocifp.png)
 
 ## Tabla de Contenidos
 
@@ -20,12 +19,27 @@ Examen de programación DAW Dual Java de febrero de 2021, CIFP Francesc de Borja
 1. [Historias de Usuario](#historias-de-usuario)
 1. [Diagrama UML](#diagrama-uml)
 1. [Tecnologías Usadas](#tecnologias-usadas)
+1. [Reflexiones](#reflexiones)
 1. [Licencia](#licencia)
 
 ---
 
 ## Salida de mi Aplicación
-![Project Salida Aplicacion](https://github.com/MateoGarciaG/NombreProject/doc/salida_aplicacion.png)
+!["Historias de usuario"](./doc/salida_CLI/ui_01.png "sneaker info ASCII CLI")
+
+!["Historias de usuario"](./doc/salida_CLI/ui_02.png "all bids and asks CLI")
+
+!["Historias de usuario"](./doc/salida_CLI/ui_03.png "sneaker max ask info CLI")
+
+!["Historias de usuario"](./doc/salida_CLI/ui_04.png "sneaker min bid info CLI")
+
+!["Historias de usuario"](./doc/salida_CLI/ui_05.png "All sales CLI")
+
+!["Historias de usuario"](./doc/salida_CLI/ui_06.png "sneaker info last sale CLI")
+
+!["Historias de usuario"](./doc/salida_CLI/ui_07.png "All sales, bids, min bid, max ask size 9.5 CLI")
+
+!["Historias de usuario"](./doc/salida_CLI/ui_08.png "sneaker info size 9.5 CLI")
 
 **[⬆ back to top](#tabla-de-contenidos)**
 
@@ -33,14 +47,49 @@ Examen de programación DAW Dual Java de febrero de 2021, CIFP Francesc de Borja
 
 ## Historias de Usuario
 > Para ver el documento de las Historias de Usuario
-- [Historias de Usuario: ](https://github.com/MateoGarciaG/NombreProject/doc/historias_usuarios.pdf)
+Las historias de usuario están enunciadas en el script principal `Stockx.java`
+
+1. El usuario/a solicita la info del `sneaker` en todas las tallas (ultima `sale`, máxima `bid`, mínima `ask`, `name` y estilo o `style`)
+
+!["Historias de usuario"](./doc/historias_de_usuaria_GUI/US_01.jpg "printar sneaker")
+
+2. El usuario/a lista todas las bids de una sneaker para conocer cuál es la `minima bid`.
+
+!["Historias de usuario"](./doc/historias_de_usuaria_GUI/US_02.jpg "sneaker bids")
+
+3. El usuario/a lista todas las asks de una sneaker para conocer cuál es la `maxima ask`.
+
+!["Historias de usuario"](./doc/historias_de_usuaria_GUI/US_03.jpg "sneaker asks")
+
+4. El usuario/a lista todas las `sales` de una sneaker para averiguar cuál es la última venta o `last sale`.
+
+!["Historias de usuario"](./doc/historias_de_usuaria_GUI/US_04.jpg "sneaker sales")
+
+
+5. El usuario/a solicita la info del sneaker en todas las tallas (ultima venta, máxima bid, mínima ask, nombre y estilo) = Historia de usuario 1.
+
+6. El usuario/a lista la info del sneaker en una determinada talla o `size`.
+
+!["Historias de usuario"](./doc/historias_de_usuaria_GUI/US_05.jpg "sneaker info size 9.5")
+
+7. El usuario/a lista todas las sales de una sneaker en una determinada talla o `size` para averiguar cuál es la última venta.
+
+!["Historias de usuario"](./doc/historias_de_usuaria_GUI/US_06.jpg "sneaker sales")
+
+8. El usuario/a lista todas las bids de una sneaker en una determinada `size` para conocer cuál es la mínima bid.
+
+!["Historias de usuario"](./doc/historias_de_usuaria_GUI/US_07.jpg "sneaker bids")
+
+9. El usuario/a lista todas las asks de una sneaker en un determinada `size` para conocer cuál es la máxima ask.
+
+!["Historias de usuario"](./doc/historias_de_usuaria_GUI/US_08.jpg "sneaker asks")
 
 **[⬆ back to top](#tabla-de-contenidos)**
 
 ---
 
 ## Diagrama UML
-![Project UML Diagram](https://github.com/MateoGarciaG/NombreProject/doc/uml_diagram_exam.png)
+![Project UML Diagram](doc/diagrama_clases_UML.jpg)
 
 **[⬆ back to top](#tabla-de-contenidos)**
 
@@ -58,7 +107,10 @@ Examen de programación DAW Dual Java de febrero de 2021, CIFP Francesc de Borja
 
 ---
 
+## Reflexiones
 
+
+---
 
 ## Licencia
 
